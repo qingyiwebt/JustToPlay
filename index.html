@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>防沉迷新闻生成器</title>
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <script src="assets/js/core.js"></script>
+    <script src="assets/js/anti-addiction-generator.js"></script>
+
+    <!-- external resources -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <div class="tips tips-warning">
+        <div class="tips-title">
+            警告
+        </div>
+        本站点仅仅是好玩，不当用途产生的后果本站点概不负责！<br> 使用时请注意遵守当地法律法规！
+    </div>
+    <div class="input-area">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        圈子
+                    </td>
+                    <td><input id="industry" type="text" value="音乐社区"></td>
+                </tr>
+                <tr>
+                    <td>
+                        软件
+                    </td>
+                    <td>
+                        <input id="software" type="text" value="Fl Studio">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        软件种类
+                    </td>
+                    <td>
+                        <input id="kind" type="text" value="编曲软件">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <button id="generate">生成</button>
+    </div>
+    <div class="result-area" style="display: none;">
+        <img id="result"><br> <br> （电脑可右键复制或保存，手机可长按保存）
+    </div>
+    <div id="renderer" style="display: none;" style="width: 450px"></div>
+</body>
+
+</html>
